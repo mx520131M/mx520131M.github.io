@@ -1,0 +1,98 @@
+<！DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<元名称="视口"内容="宽度=设备宽度，初始比例=1。0">
+<title>表弟导航</title>
+<style>
+*{边距：0；填充：0；框大小：边框}
+正文{background：#111；颜色：#FFF；填充：15px；字体系列：微软雅黑，无衬线}
+。搜索框{background：#222；border-adius:10px；padding:15px；bargin-bottom:20px}
+。搜索框输入{宽度：100%；填充：12px；边框半径：6px；边框：无；背景：#333；颜色：#FFF；下边距：8px}
+。搜索框按钮{宽度度：100%；填充：12px；背景：#0066cc；面部颜色：#fff；边框：无；边框半径：6px}
+.标题{font-size:18px；font-weight：粗体；页距：20px；010px；5px}
+。网格{显示：网格；网格模板列：重复(3，1fr)；间距：12px；页边距：30px}
+。项目{background：#222；边框半径：10px；填充：15px8px；文本对齐：居中；文本修饰：无；颜色：#FFF}
+。项IMG{宽度：60px；高度：60px；边框半径：8px；下边距：8px；对象适合：封面}
+.item span{display:block；font-size:14px}
+.工具箱{background：#222；border-roadius:10px；padding:15px}
+.tool-item{margin-bottom:15px}
+。工具箱输入{宽度：100%；填充：12px；边框半径：6px；边框：无；背景：#333；颜色：#FFF；边距：8px0}
+。工具箱按钮{宽度：100%；填充：12px；背景：#0066cc；面部颜色：#fff；边框：无；边框半径：6px}
+#shortResult{上边距：8px；边距：10px；背景：#333；边框半径：6px；WORD-BREAK:break-all}
+#shortResult a{color：#00ccff；text-decoration:none；}
+</style>
+</head>
+<body>
+
+<! -- 顶部百度搜索 -->
+<div class="search-box">
+<输入类型="文本"ID="kw"占位符="百度搜索">
+<button onclick="search()">搜索</button>
+</div>
+
+<! -- 稳台推荐 -->
+<div class="title">稳台推荐</div>
+<div class="grid">
+<a href="https://h94fw.top"class="item"target="_blank">
+<img src="https://s3.bmp.ovh/2026/05/13/r5YkHeEM.jpg">
+<span>汇赢国际</span>
+</a>
+<a href="javascript:void(0)"class="item">
+<img src="https://s3.bmp.ovh/2026/05/13/qa5vYkQh.jpg">
+<span>聚鑫汇(预热中)</span>
+</a>
+<a href="https://elh39.top"class="item"target="_blank">
+<img src="https://s3.bmp.ovh/2026/05/13/dtxbcugw.jpg">
+<span>领航国际</span>
+</a>
+<a href="https://uy98x.top"class="item"target="_blank">
+<img src="https://s3.bmp.ovh/2026/05/13/8bRqNAOz.jpg">
+<span>君临国际</span>
+</a>
+<a href="https://fp50v.top"class="item"target="_blank">
+<img src="https://s3.bmp.ovh/2026/05/13/J3nucoQS.jpg">
+<span>非凡娱乐</span>
+</a>
+<a href="https://x61tz.top"class="item"target="_blank">
+<img src="https://s3.bmp.ovh/2026/05/13/HP3r4INI.jpg">
+<span>征途国际</span>
+</a>
+</div>
+
+<! -- 虚拟币专区（新增分类） -->
+<div class="title">虚拟币专区</div>
+<div class="grid">
+<a href="https://www.binance.com"class="item"target="_blank">
+<img src="https://s3.bmp.ovh/2026/05/14/UvtfoVxM.jpg">
+<span>币安</span>
+</a>
+<a href="https://www.cgpay.com"class="item"target="_blank">
+<img src="https://s3.bmp.ovh/2026/05/14/rKVq0uU4.jpg">
+<span>CGPay</span>
+</a>
+</div>
+
+<! -- 实用工具 -->
+<div class="title">实用工具</div>
+<div class="工具箱">
+<div class="tool-item">
+<标签>短链接生成</label>
+<input type="url"id="shortURL"占位符="输入网址">
+<button onclick="makeShort()">生成</button>
+<div id="shortResult"></div>
+</div>
+</div>
+
+<script>
+函数搜索(){
+设T=document.getElementById('kw').value；
+T&&window.open('https://www.baidu.com/s?wd='+encodeURIComponent(t))
+}
+函数makeShort(){
+设T=document.getElementById('shortURL').value；
+文件。getElementById('shortResult').innerHTML=t？'<a href="${t}"target="_blank">${t}</a>'：'请输入网址'
+}
+</script>
+</body>
+</html>
